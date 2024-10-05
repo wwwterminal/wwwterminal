@@ -1,0 +1,65 @@
+name: Bug Report
+description: File a bug report
+labels: ["bug"]
+assignees: sctech-tr
+title: "[BUG] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking your time to file a bug report! Please answer all questions clearly.
+  - type: textarea
+    id: desc
+    attributes:
+      label: Bug description
+      description: Provide a clear and concise description of the bug you encountered.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      value: |
+        1. Describe the first step to reproduce the bug
+        2. Describe the second step
+        3. Continue until we can reproduce the bug.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: Describe what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: Actual behavior
+      description: Describe what actually happened.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain the bug.
+    validations:
+      required: false
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: Your environment when you came across this bug.
+      value: |
+        Browser:
+        Operating System:
+    validations:
+      required: true
+  - type: textarea
+    id: console
+    attributes:
+      label: Console errors.
+      description: Any meaningful errors in the console. (Not required)
+    validations:
+      required: false

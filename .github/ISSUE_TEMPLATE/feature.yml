@@ -1,0 +1,45 @@
+name: Feature request
+description: Request a new feature
+labels: ["enhancement", "feature"]
+title: "[NEW FEATURE] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking your time to request a new feature! Please answer all questions clearly.
+  - type: input
+    id: name
+    attributes:
+      label: Feature name
+      description: Provide the name of the feature you would like to request.
+    validations:
+      required: true
+  - type: textarea
+    id: whatdoesitdo
+    attributes:
+      label: What does it do?
+      description: What does this feature do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Reason for addition
+      description: Explain why this feature should be added. Include any use cases or benefits for users.
+    validations:
+      required: true
+  - type: dropdown
+    id: willyou
+    attributes:
+      label: Will you add this yourself and open a PR?
+      options:
+        - "Yes"
+        - "No"
+  - type: textarea
+    id: more-info
+    attributes:
+      label: More Information
+      description: Is there anything special we should know?
+      value: "No."
+    validations:
+      required: false

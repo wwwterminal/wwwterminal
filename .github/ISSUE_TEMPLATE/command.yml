@@ -15,7 +15,7 @@ body:
       placeholder: ex. helloworld
     validations:
       required: true
-  - type: textbox
+  - type: textarea
     id: whatdoesitdo
     attributes:
       label: What does it do?
@@ -23,7 +23,7 @@ body:
       placeholder: ex. It prints 'Hello world!'.
     validations:
       required: true
-  - type: textbox
+  - type: textarea
     id: why
     attributes:
       label: Reason for addition

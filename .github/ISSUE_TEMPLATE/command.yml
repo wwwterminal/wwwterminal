@@ -1,4 +1,4 @@
-name: New Command
+name: Command request
 description: Request a new command
 labels: ["enhancement", "new command"]
 title: "[NEW COMMAND] "
@@ -27,7 +27,7 @@ body:
     id: why
     attributes:
       label: Reason for addition
-      description: Explain why this field should be added. Include any use cases or benefits for users.
+      description: Explain why this command should be added. Include any use cases or benefits for users.
       placeholder: ex. It prints 'Hello world!' easily without user interaction.
     validations:
       required: true

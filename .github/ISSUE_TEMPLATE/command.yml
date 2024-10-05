@@ -36,10 +36,8 @@ body:
     attributes:
       label: Will you add this yourself and open a PR?
       options:
-        - Yes
-        - No
-      validations:
-        required: true
+        - "Yes"
+        - "No"
   - type: textarea
     id: more-information
     attributes:

@@ -9,7 +9,7 @@ open an issue.
 ### if you want to report a bug:
 open an issue.
 ### if you want to add a command:
-1. assign youself in the issue that mentions the command you're going to add.
+1. assign yourself in the issue that mentions the command you're going to add.
 2. add the command to `script.js`.
 3. update `list.html` by adding this line:
 ```html

@@ -1,0 +1,50 @@
+name: New Command
+description: Request a new command
+labels: ["enhancement", "new command"]
+title: "[NEW COMMAND] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking your time to request a new command! Please answer all questions clearly.
+  - type: input
+    id: name
+    attributes:
+      label: Command name
+      description: Provide the name of the command you would like to request.
+      placeholder: ex. helloworld
+    validations:
+      required: true
+  - type: input
+    id: whatdoesitdo
+    attributes:
+      label: What does it do?
+      description: What does this command do?
+      placeholder: ex. It prints 'Hello world!'.
+    validations:
+      required: true
+  - type: input
+    id: why
+    attributes:
+      label: Reason for addition
+      description: Explain why this field should be added. Include any use cases or benefits for users.
+      placeholder: ex. It prints 'Hello world!' easily without user interaction.
+    validations:
+      required: true
+  - type: dropdown
+    id: willyou
+    attributes:
+      label: Will you add this yourself and open a PR?
+      options:
+        - Yes
+        - No
+      validations:
+        required: true
+  - type: textarea
+    id: more-information
+    attributes:
+      label: More Information
+      description: Is there anything special we should know?
+      value: "No."
+    validations:
+      required: false

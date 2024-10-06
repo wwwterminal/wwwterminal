@@ -61,6 +61,9 @@ function moveCaretToEnd(el) {
 }
 
 const commands = {
+    github: () => {
+        window.location.href='https://github.com/wwwterminal/wwwterminal';
+    },
     help: () => {
         window.location.href='list.html'
     },
